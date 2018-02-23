@@ -1,0 +1,14 @@
+C:\Users\33989106880\senai.ifood.solution\senai.ifood.webapi\obj\Debug\netcoreapp2.0\senai.ifood.webapi.csproj.CoreCompileInputs.cache
+C:\Users\33989106880\senai.ifood.solution\senai.ifood.webapi\obj\Debug\netcoreapp2.0\senai.ifood.webapi.AssemblyInfoInputs.cache
+C:\Users\33989106880\senai.ifood.solution\senai.ifood.webapi\obj\Debug\netcoreapp2.0\senai.ifood.webapi.AssemblyInfo.cs
+C:\Users\33989106880\senai.ifood.solution\senai.ifood.webapi\bin\Debug\netcoreapp2.0\senai.ifood.webapi.deps.json
+C:\Users\33989106880\senai.ifood.solution\senai.ifood.webapi\bin\Debug\netcoreapp2.0\senai.ifood.webapi.runtimeconfig.json
+C:\Users\33989106880\senai.ifood.solution\senai.ifood.webapi\bin\Debug\netcoreapp2.0\senai.ifood.webapi.runtimeconfig.dev.json
+C:\Users\33989106880\senai.ifood.solution\senai.ifood.webapi\bin\Debug\netcoreapp2.0\senai.ifood.webapi.dll
+C:\Users\33989106880\senai.ifood.solution\senai.ifood.webapi\bin\Debug\netcoreapp2.0\senai.ifood.webapi.pdb
+C:\Users\33989106880\senai.ifood.solution\senai.ifood.webapi\bin\Debug\netcoreapp2.0\senai.ifood.domain.dll
+C:\Users\33989106880\senai.ifood.solution\senai.ifood.webapi\bin\Debug\netcoreapp2.0\senai.ifood.repository.dll
+C:\Users\33989106880\senai.ifood.solution\senai.ifood.webapi\bin\Debug\netcoreapp2.0\senai.ifood.repository.pdb
+C:\Users\33989106880\senai.ifood.solution\senai.ifood.webapi\bin\Debug\netcoreapp2.0\senai.ifood.domain.pdb
+C:\Users\33989106880\senai.ifood.solution\senai.ifood.webapi\obj\Debug\netcoreapp2.0\senai.ifood.webapi.dll
+C:\Users\33989106880\senai.ifood.solution\senai.ifood.webapi\obj\Debug\netcoreapp2.0\senai.ifood.webapi.pdb
