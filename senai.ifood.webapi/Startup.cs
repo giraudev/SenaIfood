@@ -8,7 +8,9 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using senai.ifood.domain.Contacts;
 using senai.ifood.repository.Context;
+using senai.ifood.repository.Repositories;
 
 namespace senai.ifood.webapi {
     public class Startup {
@@ -23,6 +25,11 @@ namespace senai.ifood.webapi {
         public void ConfigureServices (IServiceCollection services) {
 
             services.AddDbContext<IFoodContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+            services.AddScoped(typeof(IBaseRepository<>),typeof(BaseRepository<>));
+
+
+
          }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

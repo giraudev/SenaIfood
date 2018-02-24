@@ -11,9 +11,10 @@ using System;
 namespace senai.ifood.repository.Migrations
 {
     [DbContext(typeof(IFoodContext))]
-    partial class IFoodContextModelSnapshot : ModelSnapshot
+    [Migration("20180223230920_correcao")]
+    partial class correcao
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

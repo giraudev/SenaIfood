@@ -8,7 +8,7 @@ public class UsuarioPermissaoDomain:BaseDomain {
         public UsuarioDomain Usuario {get; set; }
 public int UsuarioId {get; set; }
 
-[ForeignKey("PermisaoId")]
+[ForeignKey("PermissaoId")]
         public PermissaoDomain Permissao {get; set; }
 public int PermissaoId {get; set; }
 
