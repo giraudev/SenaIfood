@@ -3,7 +3,9 @@ using System.Collections.Generic;
 namespace senai.ifood.domain.Contacts {
     //usando generics
     public interface IBaseRepository<T> where T : class {
-        IEnumerable<T> Listar ();
+
+        //para fazer join na hora de listar, se quiser que faça o join
+        IEnumerable<T> Listar (string[] includes = null);
 
         int Atualizar (T dados);
 
@@ -11,6 +13,7 @@ namespace senai.ifood.domain.Contacts {
 
         int Deletar (T dados);
 
-        T BuscarPorId (int id);
+        //aqui é a mesma coisa
+        T BuscarPorId (int id, string[] includes=null);
     }
 }

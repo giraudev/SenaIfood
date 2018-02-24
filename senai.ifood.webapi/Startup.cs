@@ -16,7 +16,7 @@ namespace senai.ifood.webapi {
     public class Startup {
         public IConfiguration Configuration { get; }
 
-        public Startup(IConfiguration configuration){
+        public Startup (IConfiguration configuration) {
             Configuration = configuration;
         }
 
@@ -24,13 +24,16 @@ namespace senai.ifood.webapi {
         // For more information on how to configure your application, visit https://go.microsoft.com/fwlink/?LinkID=398940
         public void ConfigureServices (IServiceCollection services) {
 
-            services.AddDbContext<IFoodContext>(options => options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+            services.AddDbContext<IFoodContext> (options => options.UseSqlServer (Configuration.GetConnectionString ("DefaultConnection")));
 
-            services.AddScoped(typeof(IBaseRepository<>),typeof(BaseRepository<>));
+            //allterar o addMVC, e configurar o Json para nao dar erro
+            services.AddMvc ().AddJsonOptions(options => {
+                options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
+            });
 
+            services.AddScoped (typeof (IBaseRepository<>), typeof (BaseRepository<>));
 
-
-         }
+        }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure (IApplicationBuilder app, IHostingEnvironment env) {
@@ -38,9 +41,7 @@ namespace senai.ifood.webapi {
                 app.UseDeveloperExceptionPage ();
             }
 
-            app.Run (async (context) => {
-                await context.Response.WriteAsync ("Hello World!");
-            });
+            app.UseMvc ();
         }
     }
 }
